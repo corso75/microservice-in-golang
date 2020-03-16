@@ -10,6 +10,7 @@ import (
 	"context"
 
 	pb "github.com/corso75/microservice-in-golang/shippy-service-consignment/proto/consignment"
+
 	micro "github.com/micro/go-micro"
 )
 
