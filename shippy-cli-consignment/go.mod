@@ -1,4 +1,4 @@
-module my_own_projects/microservice-in-golang/shippy-cli-consignment
+module github.com/corso75/microservice-in-golang/shippy-cli-consignment
 
 go 1.13
 
