@@ -1,4 +1,4 @@
-github.com/corso75/microservice-in-golang/shippy-service-vessel
+module github.com/corso75/microservice-in-golang/shippy-service-vessel
 
 go 1.13
 
