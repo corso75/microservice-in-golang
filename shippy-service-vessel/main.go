@@ -11,10 +11,12 @@ import (
 	pb "github.com/corso75/microservice-in-golang/shippy-service-vessel/proto/vessel"
 )
 
+//Repository interface ...
 type Repository interface {
 	FindAvailable(*pb.Specification) (*pb.Vessel, error)
 }
 
+//VesselRepository struct ...
 type VesselRepository struct {
 	vessels []*pb.Vessel
 }

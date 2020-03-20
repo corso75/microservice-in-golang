@@ -1,6 +1,16 @@
 # microservice-in-golang
 based on the tutorial https://ewanvalentine.io/microservices-in-golang-part-2/
 
+Used commands just for memory:
+protoc -I. --go_out=plugins=micro:. proto/vessel/vessel.proto
+protoc -I. --go_out=plugins=micro:. proto/consignment/consignment.proto
+docker build -t shippy-service-vessel .
+docker build -t shippy-service-consignment .
+docker build -t shippy-cli-consignment .
+docker container ls/stop/rm
+docker rm $(docker ps -a -q) - remove all stopped containers
+git push origin master
+
 All golang code and the docker files work at 16.03.2020.
 
 This example of work between the service shippy-service-consignment and shippy-cli-consignment.
